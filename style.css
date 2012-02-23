@@ -1,0 +1,430 @@
+/*
+
+Theme Name: Diablo 3 Graveyard Wordpress Theme
+Theme URI: http://zacvineyard.com/d3
+Description: A Wordpress theme based on the game Diablo 3. 
+Author: Zac Vineyard
+Author URI: http://zacvineyard.com
+Version: 1.0
+Tags: black, orange, red, white, two-columns, fixed-width
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+NOTE: Many of the images in this theme were either part of the Diable 3 fankit or exist as images on the current Diablo 3 community site at http://www.blizzard.com/diablo3. Many thanks to the designers who work hard to produce such quality work.
+
+*/
+
+@charset "utf-8";
+
+* {
+margin:0;
+padding:0;
+}
+
+a {
+color:#D96500;
+text-decoration:none;
+}
+
+a:hover {
+color:#fff;
+}
+
+a.btn {
+background:#fff url('images/button-1.png') no-repeat right -124px;
+color:#fff;
+display:inline-block;
+padding:6px 20px 0 0;
+text-shadow: 0 0 5px #DD3400;
+text-decoration:none;
+height:30px;
+}
+
+a.btn:hover {
+background:#fff url('images/button-1.png') no-repeat right -165px;
+}
+
+a.btn span {
+background:#fff url('images/button-1.png') no-repeat 0 -1px;
+float:left;
+height:36px;
+margin-top:-6px;
+width:20px;
+}
+
+a.btn:hover span {
+background:#fff url('images/button-1.png') no-repeat 0 -42px;
+}
+
+.aligncenter {
+clear:both;
+margin:15px 0;
+}
+
+.alignleft {
+float:left;
+margin:0 15px 15px 0;
+}
+
+.alignright {
+float:right;
+margin:0 0 15px 15px;
+}
+
+.avatar {
+border: 1px solid #483A30;
+border-bottom-color: #3D2F26;
+border-top-color: #887465;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+height:48px;
+width:48px;
+}
+
+.avatar-default {
+float:right;
+margin:0 0 20px 20px;
+}
+
+body {
+background:#000000 url('images/bg_body.jpg') repeat-x center top;
+color:#A99877;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+line-height:24px;
+margin:0 auto;
+width:966px;
+}
+
+.comment_stream {
+background:url('images/comments-bg.jpg') repeat-x center top;
+padding:60px 20px 0 20px;
+}
+
+.comments {
+list-style-type:none;
+margin:0 0 20px 0;
+}
+
+.comments .avatar {
+float:right;
+}
+
+.comments li {
+background:#0E0D0C;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+margin:20px 0 0 0;
+padding:20px;
+}
+
+.footer {
+color:#444;
+text-align:center;
+margin:0 0 100px 0;
+}
+
+.header {
+margin:0 0 -230px 0;
+text-align:center;
+position:relative;
+z-index:1;
+}
+
+.cap {
+clear:both;
+margin:0 0 20px 20px;
+}
+
+.clear {
+clear:both;
+height:0;
+}
+
+.content {
+position:relative;
+z-index:2;
+}
+
+img {
+border:none;
+}
+
+input.btn {
+border:none;
+background:url('images/button-2.png') no-repeat center -126px;
+color:#FFAE00;
+border-radius:3px;
+padding:8px 15px;
+}
+
+input.btn:hover {
+background:url('images/button-2.png') no-repeat center -167px;
+cursor:pointer;
+}
+
+p {
+margin:0 0 15px 0;
+}
+
+.main {
+background:url('images/content-bg.jpg') repeat-y 0 100px;
+clear:both;
+margin:-20px 0 0 20px;
+}
+
+.menu {
+background:url('images/comments-bg.jpg') repeat-x center -36px;
+border-bottom:1px solid #000;
+border-left:2px solid #1d1916;
+border-right:2px solid #1d1916;
+height:54px;
+position:relative;
+width:922px;
+z-index:2;
+}
+
+.menu ul li.current_page_item a {
+background:url('images/comments-bg-active.jpg') repeat-x center -36px;
+border-left:1px solid #000;
+border-right:1px solid #000;
+color:#7B6D55;
+}
+
+.menu ul {
+list-style-type:none;
+width:auto;
+}
+
+.menu ul li {
+display:block;
+float:left;
+position:relative;
+}
+
+.menu ul li a, .menu ul li a:visited {
+display:block;
+font-weight:bold;
+padding:15px 30px;
+}
+
+.menu ul li:hover a {
+color:#fff!important;
+}
+
+.menu ul li ul {
+display:none;
+}
+
+.menu ul li:hover ul {
+display:block;
+}
+
+.menu ul li ul {
+background:#1f1f1f;
+border-top:2px solid #000;
+box-shadow: 0px 2px 20px #000;
+left:0;
+padding:0 1px 0 1px;
+position:absolute;
+top:54px;
+width:220px;
+z-index:2;
+}
+
+.menu ul li ul li {
+background:#000;
+border-bottom:1px solid #1f1f1f;
+width:100%;
+}
+
+.menu ul li.current_page_item ul li a {
+background-image:none;
+}
+
+.menu ul li ul li a {
+padding:10px 30px!important;
+}
+
+.menu ul li ul li.current_page_item a {
+background-image:none;
+}
+
+.menu ul li ul li a:hover, .menu ul li.current_page_item ul li a:hover {
+background:url('images/arrows.gif') no-repeat 10px -86px;
+}
+
+.navigation {
+border-top:1px solid #000;
+margin:0 40px;
+padding:20px 0;
+}
+
+.navigation .new {
+float:right;
+}
+
+.navigation .old {
+float:left;
+}
+
+.primary {
+clear:left;
+float:left;
+overflow:hidden;
+position:relative;
+width:576px;
+z-index:1;
+}
+
+.primary blockquote {
+border-left:1px dotted #fff;
+float:right;
+font-family: 'IM Fell DW Pica', serif;
+font-size:24px;
+margin:4px 0 15px 25px;
+padding:15px 0 0 15px;
+width:50%;
+}
+
+.primary .comment_stream ul, .primary .comment_stream ol {
+margin:0;
+}
+
+.primary h1 {
+font-family: 'IM Fell DW Pica', serif;
+font-size:24px;
+font-weight:normal;
+color:#fff;
+margin:0 0 15px 0;
+}
+
+.primary h1.below {
+background:url('images/arrows.gif') no-repeat 148px 5px;
+color:#7B6D55;
+margin-bottom:-3px;
+}
+
+.primary h2 {
+color:#fff;
+display:block;
+font-family: 'IM Fell DW Pica', serif;
+font-size:18px;
+font-weight:normal;
+margin:20px 0 15px 0;
+}
+
+.primary ul, .primary ol {
+margin:0 40px 15px 40px;
+}
+
+.primary small {
+background:url('images/arrows.gif') no-repeat left -96px;
+display:inline-block;
+font-size:10px;
+padding:0 0 10px 20px;
+}
+
+.post {
+background:#12110f url('images/news-bg.jpg') no-repeat center top;
+margin-left:5px;
+}
+
+.right {
+float:right;
+}
+
+.search {
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+-moz-box-shadow: 0 0 10px #000;
+-webkit-box-shadow: 0 0 10px #000;
+box-shadow: 0 0 10px #000;
+position:relative;
+}
+
+.search input.query {
+border:2px solid #D96500;
+padding:5px;
+margin:12px 20px 0 0;
+width:260px;
+z-index:3;
+}
+
+.search-button {
+width:20px;
+height:20px;
+background:url("images/icon.png") no-repeat;
+position:absolute;
+right:25px;
+top:17px;
+border:none;
+cursor:pointer;
+z-index:4;
+}
+
+.sidebar {
+background:url('images/sidebar-bg.jpg');
+clear:right;
+float:right;
+margin:0 20px 0 0;
+width:330px;
+}
+
+.sidebar_top {
+background:url('images/sidebar-top.jpg') no-repeat;
+padding:80px 0 0 0;
+}
+
+.sidebar_bot {
+background:url('images/sidebar-bot.jpg') no-repeat bottom center;
+min-height:200px;
+padding:0 0 120px 0;
+}
+
+.sidebar_bot ul.widget {
+list-style-type:none;
+margin-bottom:40px;
+margin-left:40px;
+}
+
+.sidebar h2 {
+border-bottom: 2px solid #4B2724;
+color:#fff;
+display:block;
+font-family: 'IM Fell DW Pica', serif;
+font-size:18px;
+font-weight:normal;
+margin:0 36px 0 0;
+text-transform:uppercase;
+}
+
+.sidebar li ul {
+list-style-type: none;
+margin: 0 36px 0 0;
+padding: 10px 0;
+}
+
+.sidebar li ul li {
+border-bottom: 1px dotted #4B2724;
+margin:0 0 5px 0;
+padding:0 0 5px 0;
+}
+
+.story {
+padding:40px 20px 40px 35px;
+overflow:hidden;
+}
+
+.support {
+border:2px solid #000;
+}
+
+textarea {
+height:200px;
+width:536px;
+}
